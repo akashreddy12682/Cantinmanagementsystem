@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3E0"/>
+      <stop offset="100%" stop-color="#FFE0B2"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg)"/>
+  <circle cx="200" cy="140" r="70" fill="#FFCC80" opacity="0.6"/>
+  <!-- Cloche / Plate outline -->
+  <path d="M150 160 C150 120 250 120 250 160 Z" fill="#FB8C00"/>
+  <rect x="140" y="162" width="120" height="8" rx="4" fill="#E65100"/>
+  <circle cx="200" cy="116" r="8" fill="#E65100"/>
+  <!-- Steam -->
+  <path d="M185 100 Q190 90 185 80" stroke="#FF9800" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M200 95 Q205 85 200 75" stroke="#FF9800" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M215 100 Q220 90 215 80" stroke="#FF9800" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <text x="200" y="215" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="700" fill="#BF360C" text-anchor="middle">Freshly Prepared Meal</text>
+  <text x="200" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E65100" text-anchor="middle">CampusBite Quality Guarantee</text>
+</svg>

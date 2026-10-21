@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="500" height="350">
+  <defs>
+    <linearGradient id="bgGrad_lime-soda.jpg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7CB342" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7CB342" stop-opacity="0.38"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="350" fill="url(#bgGrad_lime-soda.jpg)"/>
+  <circle cx="250" cy="140" r="85" fill="#7CB342" opacity="0.15"/>
+  <circle cx="250" cy="140" r="70" fill="#FFFFFF"/>
+  <circle cx="250" cy="140" r="55" fill="#7CB342" opacity="0.9"/>
+  <!-- Cloche icon inside plate -->
+  <path d="M215 150 C215 125 285 125 285 150 Z" fill="#FFFFFF"/>
+  <rect x="205" y="152" width="90" height="6" rx="3" fill="#FFFFFF"/>
+  <circle cx="250" cy="120" r="5" fill="#FFFFFF"/>
+  <!-- Badge card -->
+  <rect x="30" y="240" width="440" height="85" rx="12" fill="#FFFFFF" opacity="0.96"/>
+  <text x="250" y="275" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#212529" text-anchor="middle">Fresh Lime Soda</text>
+  <text x="250" y="303" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6c757d" text-anchor="middle">Chilled Sparkling Soda with Mint & Salt</text>
+</svg>

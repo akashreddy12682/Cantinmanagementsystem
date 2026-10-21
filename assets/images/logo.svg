@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="canteenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="#FF9800"/>
+    </linearGradient>
+    <linearGradient id="trayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E64A19"/>
+      <stop offset="100%" stop-color="#F57C00"/>
+    </linearGradient>
+  </defs>
+  <!-- Icon Group -->
+  <g transform="translate(6, 6)">
+    <!-- Cloche / Plate Base -->
+    <circle cx="24" cy="24" r="22" fill="url(#canteenGrad)"/>
+    <path d="M12 28 C12 20, 36 20, 36 28 Z" fill="#FFFFFF" opacity="0.95"/>
+    <circle cx="24" cy="18" r="3" fill="#FFFFFF"/>
+    <rect x="10" y="29" width="28" height="3" rx="1.5" fill="#FFFFFF"/>
+    <!-- Steam waves -->
+    <path d="M18 12 Q20 9 18 6" stroke="#FFE082" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M24 13 Q26 10 24 7" stroke="#FFE082" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <path d="M30 12 Q32 9 30 6" stroke="#FFE082" stroke-width="2" stroke-linecap="round" fill="none"/>
+  </g>
+  <!-- Brand Text -->
+  <text x="62" y="32" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" fill="#212529">Campus<tspan fill="#E64A19">Bite</tspan></text>
+  <text x="63" y="47" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="#757575">CANTEEN &amp; CAFE</text>
+</svg>

@@ -1,0 +1,28 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Composer vendor
+/vendor/
+composer.lock
+
+# Logs and temp files
+*.log
+/tmp/
+*.tmp
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# AWS deployment bundles (if zipped locally)
+*.zip
+.elasticbeanstalk/

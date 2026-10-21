@@ -1,0 +1,340 @@
+/* ============================================================
+   CampusBite Canteen Management System - Main Customer CSS
+   ============================================================ */
+
+:root {
+    --primary-color: #e64a19;
+    --primary-hover: #d84315;
+    --primary-light: #ffccbc;
+    --accent-color: #ff9800;
+    --dark-color: #1e293b;
+    --darker-color: #0f172a;
+    --light-bg: #f8fafc;
+    --card-border-radius: 14px;
+    --btn-border-radius: 10px;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #334155;
+    background-color: var(--light-bg);
+    overflow-x: hidden;
+}
+
+/* Primary Color Overrides */
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: var(--primary-hover) !important;
+    border-color: var(--primary-hover) !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(230, 74, 25, 0.25);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary-subtle {
+    background-color: #fff3e0 !important;
+}
+
+/* Navigation Bar */
+.main-navbar {
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.avatar-circle {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #e64a19, #f57c00);
+    color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+/* Hero Section */
+.hero-banner {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 3.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(230, 74, 25, 0.2) 0%, rgba(0,0,0,0) 70%);
+    pointer-events: none;
+}
+
+/* Category Filter Chips */
+.category-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.25rem;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 50rem;
+    color: #475569;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.category-pill:hover, .category-pill.active {
+    background-color: var(--primary-color);
+    color: #ffffff !important;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(230, 74, 25, 0.25);
+    transform: translateY(-2px);
+}
+
+/* Food Item Card */
+.food-card {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--card-border-radius);
+    background: #ffffff;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.food-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    border-color: #cbd5e1;
+}
+
+.food-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 190px;
+    background-color: #f1f5f9;
+    overflow: hidden;
+}
+
+.food-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.food-card:hover .food-card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.food-badge-overlay {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.food-price-tag {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(4px);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50rem;
+    font-size: 0.95rem;
+}
+
+.food-card-body {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.food-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.4rem;
+}
+
+.food-card-desc {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 1rem;
+    line-height: 1.45;
+    flex-grow: 1;
+}
+
+/* Order Tracking Stepper */
+.order-stepper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.order-stepper::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    height: 4px;
+    background: #e2e8f0;
+    z-index: 1;
+}
+
+.stepper-progress {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    height: 4px;
+    background: #10b981;
+    z-index: 2;
+    transition: width 0.4s ease;
+}
+
+.step-item {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    flex: 1;
+}
+
+.step-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px solid #cbd5e1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.step-item.completed .step-icon {
+    background: #10b981;
+    border-color: #10b981;
+    color: #ffffff;
+}
+
+.step-item.active .step-icon {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(230, 74, 25, 0.2);
+}
+
+.step-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.step-item.active .step-label {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.step-item.completed .step-label {
+    color: #0f172a;
+}
+
+/* Quantity Counter Widget */
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.quantity-control button {
+    background: #f8fafc;
+    border: none;
+    padding: 0.35rem 0.65rem;
+    color: #334155;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quantity-control button:hover {
+    background: #e2e8f0;
+}
+
+.quantity-control input {
+    width: 44px;
+    text-align: center;
+    border: none;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* Receipt Card */
+.receipt-card {
+    background: #ffffff;
+    border: 1px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+}
+
+.receipt-card::before, .receipt-card::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: var(--light-bg);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.receipt-card::before { left: -12px; }
+.receipt-card::after { right: -12px; }
+
+/* Utilities */
+.hover-white:hover {
+    color: #ffffff !important;
+}
+
+.shadow-xs {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
